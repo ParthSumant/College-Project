@@ -1,0 +1,116 @@
+/* Reset default margins/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-buttons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.header-buttons a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-buttons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.footer-buttons a:hover {
+    text-decoration: underline;
+}
+
+/* Container with side navs and main content */
+.container {
+    display: flex;
+    flex: 1;
+}
+
+/* Left and Right Navigation */
+.left-nav, .right-nav {
+    width: 150px;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
+.left-nav ul, .right-nav ul {
+    list-style-type: none;
+}
+
+.left-nav ul li, .right-nav ul li {
+    margin-bottom: 10px;
+}
+
+.left-nav ul li a, .right-nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.left-nav ul li a:hover, .right-nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Circular profile picture */
+.profile-pic {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #4CAF50;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Additional Images */
+.images {
+    margin-top: 20px;
+}
+
+.images img {
+    width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #4CAF50;
+}
